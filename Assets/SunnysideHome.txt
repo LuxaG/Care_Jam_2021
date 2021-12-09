@@ -1,0 +1,309 @@
+:: StoryTitle
+Sunnyside Home
+
+:: StoryData
+{
+ "ifid": "2EF6B822-66C7-4073-891F-64DAE4EAD922",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "1",
+ "start": "Welcome"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: Welcome [Welcome] {"position":"25,175","size":"100,100"}
+You find yourself in a large room, a comfy space with big windows that let in a lot of sunlight. There's soft music coming from the speakers. Try as it might, the music fails to soothe your nerves. 
+
+//This isn't home//, you think, //I'm not home//. 
+
+Wringing your hands, you look around the room, you've just arrived and feel lost.  
+
+Someone approaches you, their face is kind and their smile warms your heart. 
+
+''"Hello, my name is Angy"'', they say, ''"Welcome to Sunnyside Home. What is your name?"''
+
+[[Click here to tell Angy your name]]
+
+
+
+
+
+:: Click here to tell Angy your name [Name] {"position":"150,175","size":"100,100"}
+(set: $name to (prompt: "What is your name?", ""))
+
+|cloaked>[''"Welcome, (print:$name), I'm so happy to meet you". ''] 
+(show:?cloaked)
+
+|cloaked>[Angy holds out a hand tentatively, giving you the choice to shake hands or just wave. You decide to wave, not entirely ready to trust this person.] 
+(show:?cloaked)
+
+|cloaked>[You notice that their nametag has the pronouns ''she/her'' printed just under her name]
+(show:?cloaked)
+
+|cloaked>[''"That's okay"'', Angy says, ''"I understand meeting new people and coming to new places can be difficult, but that's why I'm here. "'']
+(show:?cloaked)
+
+|cloaked>[You suddenly feel at ease with Angy, her smile is genuine and her soft voice calms your nerves. The room looks a little brighter now, and the music starts to relax you. A friendly face is all you needed.]
+(show:?cloaked)
+
+|cloaked>[''"Please come with me"'', Angy says, ''"I will show you around Happy Times and let you get a lay of the land"''.]
+(show:?cloaked) 
+
+[[Click here to follow Angy into the hallway]]
+
+:: Click here to follow Angy into the hallway [Hallway] {"position":"275,175","size":"100,100"}
+Angy leads you into a hallway, the walls decorated with eye-catching artwork and the wallpaper is bright and cheery. You hope that the rest of the home looks as cozy. 
+
+''"I work the front desk most days"'', Angy informs you, ''"I greet new residents and their families, and I am also in charge of your daily schedule, (print:$name)."'' She holds up a clipboard with a few documents attached to it, emphasizing the point by waving it around.  
+
+You are a little confused, no one told you anything about a daily schedule. How will you react?
+
+[[-"Daily schedule?" (curious)]]
+
+[[-"Schedule? What's this, am I still in school or something?" (annoyed)]]
+
+:: -"Daily schedule?" (curious) [Curious] {"position":"400,300","size":"100,100"}
+''"That's right"'', Angy declares,'' "I'm going to make sure you are active and thriving! I have some activities planned for you and I'm sure you're going to love them!"''
+
+Angy is so full of energy that you suddenly feel excited about the activities. 
+
+//Maybe it'll be alright//, you think. 
+
+''"But first things first!"'', she exclaims,'' "We've got to make sure you don't get lost here on your first day, so I'm going to take you to meet everyone in the team." ''Angy looks down at her clipboard, her eyes scanning the documents for a few seconds until, ''"A-ha!"''. 
+
+''"We're going to the nurse's office and the dining hall"'', Angy says, ''"staff are on break right now and they will be delighted to meet you". ''
+
+''"So, what do you say? Where do you want to go first?"''
+
+[[-Dining hall]]
+
+[[-Nurse's office]]
+
+
+
+:: -"Schedule? What's this, am I still in school or something?" (annoyed) [Annoyed] {"position":"400,50","size":"100,100"}
+''"Now, now, now"'', Angy starts, holding her hand up, ''"you don't think I'm going to let you sit around all day, do you? After all, there's tons of people here excited to meet the new kid in town!" ''
+
+You can't help yourself, Angy makes it sound fun, you are starting to feel excited about meeting people here.
+
+Angy raises the clipboard and fumbles a bit with the documents until she finds what she's looking for. ''"A-ha!"'', she exclaims, ''"I'm sure you will love meeting the rest of the team, they're on break right now and they will be happy to say hello." ''
+
+''"Nurse's office or dining hall?"'', she asks, ''"Where would you like to go first?"''
+
+[[-Dining hall]]
+
+[[-Nurse's office]]
+
+
+
+
+
+
+
+:: -Dining hall [Dining-hall] {"position":"550,300","size":"100,100"}
+Angy takes you to the dinning hall, a room filled with tables covered in tablecloths where residents share their meals. //This room looks cozy//, you think, //It feels like a home. // There's lively music coming from the speakers installed in the ceiling, you are pretty sure you can recognize the tune. You can hear the clatter of dishes being placed on the table, the cutlery and the glasses are being organized neatly. There's a smell wafting from the kitchens, it's smells delicious. 
+
+''"Oh, hey Teddy!"'', Angy calls out to someone leaning over a table. The person straigthens up and looks your way. Upon catching sight of your face, they smile and head your way. 
+
+''"Well, hello there"'', Teddy greets you with enthusiasm, ''"I'm Teddy and I'm in charge of food around here". '' Teddy's nametag has the pronouns ''they/them''. 
+
+You introduce yourself, and Teddy takes out a notebook from their back pocket. ''"Teddy is intense with food"'', Angy exclaims, laughing, ''"They can keep a conversation about condiments going for hours!" ''
+
+''"Yeah, yeah, make fun of Teddy for having a refined palate"'', Teddy shoots back, grinning at Angy. ''"So tell me, (print:$name), do you have a special meal? Any favourite foods?" ''
+
+You think back to your partner, they used to do the cooking. A tight feeling wraps around your heart, a small wave of pain hits you. 
+
+What will you answer?
+
+[[- "I used to eat all types of meals. My partner was the best cook."]]
+
+[[- "No, I don't have any favourites."]]
+
+
+
+
+
+:: -Nurse's office [Nurse] {"position":"550,50","size":"100,100"}
+Angy takes you to a door with the word ''NURSE'' printed on the glass panel, she knocks a few times and waits for an answer. 
+
+''"Come in"'', a voice calls out. 
+
+Angy opens the door and motions for you to go through. You hesitate, anxious to go inside a medical office. 
+
+//I'm perfectly healthy,// you think, //Why am I here?//
+
+Angy is waiting, what will you do?
+
+[[- Shake your head and refuse to enter the nurse's office.]]
+
+[[- Sigh and go ahead through the door.]]
+
+
+
+
+:: - Shake your head and refuse to enter the nurse's office. [Hesitate] {"position":"725,150","size":"100,100"}
+''"Please come in"'', the same voice cries out, ''"I'm free for a couple of minutes before I have to make my rounds"''. 
+
+You are very uncomfortable, medical offices make you feel anxious, ever since...
+
+''"(print:$name), I think it's important to meet Santiago"'', Angy whispers, trying to encourage you, ''"He's going to be a big part of your life here".''
+
+//My life here//, you think, //This is not my home.// 
+
+''"We will do our best to make you feel at home, and make you feel safe and cared for"'', she continues, ''"I can't promise you a party everyday, but I can promise you that people here will care for you and your needs."''
+
+''"It's okay if you don't want to come inside"'', the voice calls out, ''"I'll be there in a jiffy"''. You hear footsteps approaching, and a face peeks out from behind the door. 
+
+''"Hi, my name is Santiago, I'm a nurse here in Happy Times"'', the nurse says, ''"I'm delighted to meet you". '' The nametag has the pronouns ''he/him'' printed under the name. 
+
+''"This is (print:$name), a new resident"'', Angy explains, a gentle tone in her voice. You nod your hello and remain silent. It's difficult to address Santiago, the scrubs he's wearing bring bad memories. 
+
+''"Thank you for taking the time to meet me"'', Santiago says, noticing that you are uncomfortable around him, ''"I'm sure we'll have more time to discuss any concerns you have about your health". '' His voice is soft and his eyes are very expressive, he's really trying to put you at ease. 
+
+You thank him, your voice coming out finally in a low whisper. Santiago smiles and nods, excusing himself and going back inside the nurse's office.
+
+''"Well, that went well"'', Angy says, ''"Santiago is going to have scheduled consults with you, but you are free to visit him in the office whenever you need to." ''
+
+She suddenly checks her wristwatch and gasps. ''"Oh, we're just in time to go to the dining hall before service starts" ''
+
+''"Or maybe you'd like to go back the common room?" ''
+
+Where will you go next?
+
+[[-Dining hall]]
+
+[[-Common room]] (If you go to the common room next, the staff at the dining hall will be busy)
+
+
+
+
+
+:: - Sigh and go ahead through the door. [Enter] {"position":"725,0","size":"100,100"}
+You hold the door gently and go inside the nurse's office, surprised at the atmosphere. This isn't like any other medical office you have ever been in. 
+
+Sitting at the desk, you find someone looking at you, their wide smile is good-natured as they wave you in. ''"Hello, there"'', they call out, rising from a chair in front of a computer,'' "Welcome to my office, I don't believe we've met"''. 
+
+Your heart pounding at the sight of the stethoscope hung around this person's neck, you introduce yourself. 
+
+''"It's great to meet you, (print:$name)"'', the nurse replies,''"My name is Santiago and I'm part of the nursing staff"''. You take a look at the nametag, the pronouns ''he/him'' are printed under the name.
+
+''"Santiago is going to be looking after you, (print:$name)"'', Angy comments, ''"You have scheduled consults, but you can drop in anytime you need".'' 
+
+''"That's right"'', Santiago says, tugging at the stethoscope, ''"It's important to be in tip-top shape, and I'm happy to help you be healthy.''
+
+Santiago notices you staring at the stethoscope, and takes it off from around his neck, placing it on his desk, away from sight. ''"Please feel free to ask questions about your health during consults"'', he says, ''"I will do my best to answer them and give you the information you need to feel better". ''
+
+He's very professional, and you feel grateful for the kindness in his voice. You've never liked your medical check-ups, but Santiago is trying to make you feel at ease. 
+
+''"Right, so how about we go to the dining hall?"'', Angy asks, she checks her watch quickly, ''"Or maybe the common room? Staff there must be free by now. Oh, but the dining service is about to start."''
+
+Where will you go next?
+
+[[-Dining hall]]
+[[-Common room]] (If you go to the common room, the dining hall staff will be busy)
+
+:: -Common room [Common-room] {"position":"900,200","size":"100,100"}
+You are led back to the common room, where you first met Angy, and find another person there, sitting on one of the couches. As soon as they see you and Angy enter the room, they stand up and invite you to come closer. 
+
+''"Hello, I'm Jodie"'', they say, tapping the nametag on their shirt. You can clearly see the ''she/her'' pronouns printed under the name. ''"And you're a new resident, it's great to meet you."'' Jodie seems like someone who takes charge of a situation, you're not sure if you like them.'' "What is your name?"''
+
+You introduce yourself, cautious about this new person, she seems to be very serious. ''"Great, I'm sure we'll get to know each other a little better tomorrow when we meet for breakfast"  '', Jodie replies, nodding her head. 
+
+''"Oh, yes, breakfast starts at 7 am and finishes at 10 am"'', Angy interrupts. ''"We better get you to your room so you can start getting ready for dinner, okay? Harry already brought your bags up."''
+
+But do you really feel like going to your room?
+
+[[Click here to go to your room]]
+
+[[Click here to keep exploring]]
+
+:: - "I used to eat all types of meals. My partner was the best cook." [Best-cook] {"position":"725,450","size":"100,100"}
+There's a soft longing in your voice, it's low, but high enough for Teddy and Angy to hear. ''"They must have been a wonderful cook"'', Teddy says, putting their notebook away, ''"I can't guarantee the same, but I'll do my best." ''
+
+//Yes, they were a wonderful cook//, you think, //the best food was made at home//. 
+
+''"Hey, how about you share some of their recipes with me?"'', Teddy asks, ''"I bet we're due for a new menu item and the other residents will be happy to try something new." '' 
+
+That sounds lovely, you say. You spend a few minutes speaking to Teddy about many dishes and recipes you shared with your partner during the years. 
+
+''"Well, it's time for me to get back, the service is about to start!"'', Teddy excuses themself, ''"It was lovely meeting you!"''. 
+
+''"That went really well, didn't it?"'', Angy says and checks her watch, ''"The nurse's office is next, we can make it just before break is over. Or maybe we could go back to the common room?"''
+
+Where do you want to go next? 
+
+[[-Nurse's office]]
+
+[[-Common room]] (If you go to the common room, the nurse's office will be locked)
+
+
+:: - "No, I don't have any favourites." [No-favourites] {"position":"725,300","size":"100,100"}
+''"That's okay"'', Teddy answers and puts their notebook away, ''"I'll make sure that you have variety and options in all your meals, how does that sound?". ''
+
+''"And if you happen to have a craving for anything in particular, we can make it work"'', Teddy continues, ''"Maybe it'll be a hit with the other residents and we'll have a new menu item. "''
+
+You think that sounds good, you've always liked to try new dishes and recipes, specially if it was your partner that made them for you. 
+
+''"I'm always open to suggestions, just so you know"'', Teddy remarks, patting themself on the back, ''"I'm not afraid of a little spice". ''
+
+''"I have to get back, the service is almost ready, it was great meeting you!"'', Teddy says their goodbyes and walks back to their staff. 
+
+''"Great, now to nurse's office"'', exclaims Angy, checking her wristwatch.'' "Although their break is almost over...We can go to the common room, instead?"''
+
+Where do you want to go next?
+
+[[-Nurse's office]]
+
+[[-Common room]] (If you go to the common room, the nurse´s office will be locked)
+
+:: Click here to go to your room [Room] {"position":"1175,175","size":"100,100"}
+Angy takes you to your room, and you gasp softly when you enter. There it is, the last photograph you have of you and your partner. In it, both of your smiles are big and radiant. 
+
+//You were always such a joker//, you remember. 
+
+The picture frame is placed on the desk close to the bed. It's such an emotional moment, you barely notice another person inside the room, they're crouched low while adjusting the bed's legs. 
+
+''"Oh, I'm sorry, I just noticed they were a little wobbly so I wanted to tighten them before you came in"'', the person says, standing up and scratching their head, a bit awkward. 
+
+''"Don't worry about it, Harry, thanks for doing this"'', Angy replies,'' "(print:$name) here is a new resident and having a goodnight's sleep is very important for the first night". ''
+
+''"Welcome"'', Harry says, and with a chuckle he adds, ''"If you ever need something fixed around here, I'm your guy!"''
+
+You thank Harry and he leaves the room, leaving you and Angy alone. 
+
+''"Please make yourself at home"'', she says, ''"If you need anything, there's a phone on the bedside table, just press 0 to speak with me, okay?"''
+
+Before leaving, Angy reminds you that dinner is about to start. 
+
+
+
+:: Click here to keep exploring [Explore] {"position":"975,350","size":"100,100"}
+You tell Angy that you would rather explore a bit more and excuse yourself from her. After all, if you're going to be living here, you need to start getting used to move around on your own. She protests a bit, before agreeing with you after hearing your reasons.
+
+You walk back to the corridor, but after a few minutes you start feeling very tired. Gripping your cane tightly, you feel your knees giving in and the hallway music starts to fade. 
+
+//Oh, no//, you think, //I think I walked too much today. //
+
+Slowly, your body starts to lower into the hallway floor until you reach a sitting position, still holding on to your cane. 
+
+[[Click here to ask for help]]
+
+:: Click here to ask for help [Help] {"position":"1150,350","size":"100,100"}
+Santiago takes your vitals, and after assessing that everything is okay, he gives you a small glass of fruit juice. 
+
+''"You daredevil, I think you were going too fast"'', he remarks, with a smile, ''"Remember to take breaks now and then to avoid depleting your energy"''. 
+
+Angy, who had been called to Santiago's office, nodded her head in agreement and raised a hand to speak.'' "Remember to take a few seconds off your feet and sit on the couches and chairs placed in the hallways and the common room. That way you can start building up your strength before going on your way." ''
+
+
+''"You will feel better in no time, it's alright to go back out and enjoy the rest of your day"'', Santiago assures you. 
+
+
+[[Click here to go to your room]]
+
